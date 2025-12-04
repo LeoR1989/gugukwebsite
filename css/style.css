@@ -69,6 +69,7 @@ header {
     font-size: 1.5rem;
     font-weight: 800;
     background: linear-gradient(to right, #fff, var(--primary-color));
+    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     letter-spacing: -0.5px;
@@ -98,11 +99,11 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
+    min-height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8rem 5% 4rem;
+    padding: 6rem 5% 3rem;
     position: relative;
     overflow: hidden;
 }
@@ -149,6 +150,7 @@ nav a:hover {
 .hero h1 span {
     display: block;
     background: linear-gradient(to right, #fff, #cbd5e1);
+    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -285,6 +287,7 @@ footer {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -317,7 +320,7 @@ footer {
 /* Legal Pages */
 .legal-page {
     padding: 8rem 5% 4rem;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -343,6 +346,17 @@ footer {
 .legal-content ul {
     margin-bottom: 1rem;
     color: #cbd5e1;
+}
+
+.legal-content a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.legal-content a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
 }
 
 .legal-content ul {
@@ -508,8 +522,54 @@ footer {
     color: #000;
 }
 
+[dir="rtl"] nav ul {
+    text-align: center;
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+    position: fixed;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 1000;
+}
+
+.scroll-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    /* Increased opacity */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    /* Added border for better click area/visibility */
+}
+
+.scroll-dot:hover {
+    background: rgba(255, 255, 255, 0.6);
+    transform: scale(1.2);
+}
+
+.scroll-dot.active {
+    background: #fff;
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* RTL Support for Scroll Indicator */
+[dir="rtl"] .scroll-indicator {
+    right: auto;
+    left: 2rem;
+}
+
 @media (max-width: 768px) {
-    [dir="rtl"] nav ul {
-        text-align: center;
+    .scroll-indicator {
+        display: none;
+        /* Hide on mobile */
     }
 }

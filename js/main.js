@@ -65,7 +65,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize Language
     const savedLang = localStorage.getItem('guguk_lang') || 'en';
-    setLanguage(savedLang);
+    if (!document.body.classList.contains('no-translate')) {
+        setLanguage(savedLang);
+    }
 
     // Dropdown Interaction
     if (langBtn && langDropdown) {
@@ -88,5 +90,37 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+    // Scroll Indicator Logic
+    const scrollDots = document.querySelectorAll('.scroll-dot');
+    const sections = ['home', 'features', 'footer'];
+
+    window.addEventListener('scroll', () => {
+        let current = '';
+        const scrollPosition = window.scrollY + window.innerHeight / 2;
+
+        sections.forEach(sectionId => {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    current = sectionId;
+                }
+            }
+        });
+
+        // Special case for bottom of page
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50) {
+            current = 'footer';
+        }
+
+        scrollDots.forEach(dot => {
+            dot.classList.remove('active');
+            if (dot.getAttribute('href') === `#${current}`) {
+                dot.classList.add('active');
+            }
+        });
+    });
 });
 
