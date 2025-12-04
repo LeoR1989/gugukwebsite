@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Safety - GuGuk</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="assets/logo.png" alt="GuGuk Logo">
+            <span>GuGuk</span>
+        </a>
+        <div class="mobile-menu-btn">☰</div>
+        <nav>
+            <ul>
+                <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                <li><a href="index.html#features" data-i18n="nav.features">Features</a></li>
+                <li><a href="index.html#download" class="btn btn-primary" style="padding: 0.5rem 1.5rem;"
+                        data-i18n="nav.download">Download</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="legal-page">
+            <h1 data-i18n="child_safety.title">Child Safety Policy</h1>
+            <div class="legal-content">
+                <p>Last updated: December 2024</p>
+
+                <h2>Our Commitment</h2>
+                <p>GuGuk is committed to creating a safe and positive environment for all users, especially younger
+                    ones. We have zero tolerance for inappropriate behavior.</p>
+
+                <h2>Age Restrictions</h2>
+                <p>GuGuk is not intended for children under the age of 13. We do not knowingly collect personal
+                    information from children under 13.</p>
+
+                <h2>Safety Features</h2>
+                <ul>
+                    <li><strong>Moderation:</strong> We use both automated tools and human moderators to monitor
+                        content.</li>
+                    <li><strong>Reporting:</strong> Users can easily report inappropriate behavior or content.</li>
+                    <li><strong>Privacy Controls:</strong> Users have control over who can contact them and see their
+                        profile.</li>
+                </ul>
+
+                <h2>Parental Guide</h2>
+                <p>We encourage parents to talk to their children about online safety. If you are a parent and believe
+                    your child has provided us with personal information, please contact us.</p>
+
+                <p><em>(This is a placeholder text. Please replace with your official child safety policy.)</em></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>GuGuk</h2>
+                <p data-i18n="footer.slogan">Connecting the world through play.</p>
+                <div class="language-selector">
+                    <button id="lang-btn" class="lang-btn">
+                        🌐 <span id="current-lang">English</span>
+                    </button>
+                    <div id="lang-dropdown" class="lang-dropdown">
+                        <button class="lang-option" data-lang="en">English</button>
+                        <button class="lang-option" data-lang="ar">العربية</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4 data-i18n="footer.company">Company</h4>
+                <ul>
+                    <li><a href="about.html" data-i18n="footer.about">About Us</a></li>
+                    <li><a href="#" data-i18n="footer.careers">Careers</a></li>
+                    <li><a href="#" data-i18n="footer.contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4 data-i18n="footer.legal">Legal</h4>
+                <ul>
+                    <li><a href="terms.html" data-i18n="footer.terms">Terms & Conditions</a></li>
+                    <li><a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a></li>
+                    <li><a href="child-safety.html" data-i18n="footer.child_safety">Child Safety</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright" data-i18n="footer.copyright">
+            &copy; 2024 GuGuk Inc. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
