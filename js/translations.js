@@ -3,9 +3,9 @@ const translations = {
         "nav.home": "Home",
         "nav.about": "About",
         "nav.features": "Features",
-        "nav.download": "Download",
-        "hero.title": "Run into your gaming buddy.",
-        "hero.description": "Don't game alone anymore! If you want to team up with pros and enjoy a smoother ride, come to GuGuk. We don't care about your rank or your looks. Just log on, and you'll get active invites to group up, play together, and even hop on voice chat.",
+        "nav.download": "Download App",
+        "hero.title": "Never play alone again.",
+        "hero.description": "Don't game alone! Team up with pros instantly on GuGuk. No rank requirements—just log in for active invites, group play, and voice chat.",
         "hero.btn.ios": "Download for iOS",
         "hero.btn.android": "Download for Android",
         "features.title": "Why GuGuk?",
@@ -23,7 +23,7 @@ const translations = {
         "footer.terms": "Terms & Conditions",
         "footer.privacy": "Privacy Policy",
         "footer.child_safety": "Child Safety",
-        "footer.copyright": "© 2025 GuGuk Inc. All rights reserved.",
+        "footer.copyright": "© 2026 GuGuk Inc. All rights reserved.",
         "footer.slogan": "Connecting the world through play.",
         "about.title": "About Us",
         "about.mission.title": "Our Mission",
@@ -34,17 +34,18 @@ const translations = {
         "about.join.desc": "We are a team of passionate gamers, developers, and dreamers. We are constantly pushing the boundaries of what a social app can be.",
         "terms.title": "Terms and Conditions",
         "privacy.title": "Privacy Policy",
-        "child_safety.title": "Child Safety Policy"
+        "child_safety.title": "Child Safety Policy",
+        "screenshots.title": "App Preview"
     },
     ar: {
         "nav.home": "الرئيسية",
         "nav.about": "عن جوجوك",
         "nav.features": "المميزات",
-        "nav.download": "تحميل",
-        "hero.title": "التقي بصديقك في اللعب.",
-        "hero.description": "لا تلعب بمفردك بعد الآن! إذا كنت ترغب في تكوين فريق مع محترفين والاستمتاع بتجربة لعب أكثر سلاسة، انضم إلى GuGuk. لا يهمنا مستواك أو مظهرك. فقط سجل الدخول، وستتلقى دعوات نشطة للانضمام إلى مجموعات، واللعب معًا، وحتى الدردشة الصوتية.",
+        "nav.download": "تحميل التطبيق",
+        "hero.title": "لن تلعب بمفردك مجدداً.",
+        "hero.description": "لا تلعب بمفردك! كوّن فريقًا مع المحترفين فورًا على GuGuk. لا متطلبات للتصنيف - فقط سجل الدخول للحصول على دعوات نشطة ولعب جماعي ودردشة صوتية.",
         "hero.btn.ios": "تحميل لنظام iOS",
-        "hero.btn.android": "تحميل لنظام Android",
+        "hero.btn.android": "تحميل لنظام أندرويد",
         "features.title": "لماذا جوجوك؟",
         "feature.voice.title": "كوّن فريقًا في ألعاب الهاتف الشهيرة.",
         "feature.voice.desc": "كوّن فريقًا أولاً، ثم انطلق في اللعب — مع دردشة صوتية فائقة الوضوح.",
@@ -60,7 +61,7 @@ const translations = {
         "footer.terms": "الشروط والأحكام",
         "footer.privacy": "سياسة الخصوصية",
         "footer.child_safety": "سلامة الأطفال",
-        "footer.copyright": "© 2025 GuGuk Inc. جميع الحقوق محفوظة.",
+        "footer.copyright": "© 2026 GuGuk Inc. جميع الحقوق محفوظة.",
         "footer.slogan": "ربط العالم من خلال اللعب.",
         "about.title": "معلومات عنا",
         "about.mission.title": "مهمتنا",
@@ -71,6 +72,7 @@ const translations = {
         "about.join.desc": "نحن فريق من اللاعبين والمطورين والحالمين المتحمسين. نحن ندفع باستمرار حدود ما يمكن أن يكون عليه التطبيق الاجتماعي.",
         "terms.title": "الشروط والأحكام",
         "privacy.title": "سياسة الخصوصية",
-        "child_safety.title": "سياسة سلامة الأطفال"
+        "child_safety.title": "سياسة سلامة الأطفال",
+        "screenshots.title": "لقطات التطبيق"
     }
 };

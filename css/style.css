@@ -573,3 +573,72 @@ footer {
         /* Hide on mobile */
     }
 }
+
+/* Google Play Badge Button */
+.btn-google-play {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.btn-google-play img {
+    width: 239px;
+    height: 71px;
+    display: block;
+}
+
+.btn-google-play:hover {
+    transform: translateY(-2px);
+    /* Removed border/bg hover effects as they don't apply to the image badge */
+}
+
+/* App Screenshots Section */
+.screenshots {
+    padding: 6rem 5%;
+    background-color: var(--dark-bg);
+}
+
+.screenshots-container {
+    display: none;
+    /* Hidden by default */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Visibility Logic based on HTML lang attribute */
+html[lang="en"] .screenshots-container[data-lang="en"],
+html[lang="ar"] .screenshots-container[data-lang="ar"] {
+    display: grid;
+}
+
+.screenshot-item {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    border: 1px solid var(--glass-border);
+}
+
+.screenshot-item:hover {
+    transform: translateY(-5px);
+}
+
+.screenshot-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive grid for screenshots */
+@media (max-width: 1024px) {
+    .screenshots-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .screenshots-container {
+        grid-template-columns: 1fr;
+    }
+}
